@@ -17,10 +17,11 @@ public class ThemePark {
     }
 
     public String getEnjoyablesWithRating() {
-        String result;
+        String result = "";
 
         for (IEnjoyable enjoyable : enjoyables) {
-            result += (enjoyable.getName() + ": " + enjoyable.getFunRating() + ", ")
+            result += (enjoyable.getName() + ": " + enjoyable.getFunRating() + ", ");
         }
+        return result;
     }
 }

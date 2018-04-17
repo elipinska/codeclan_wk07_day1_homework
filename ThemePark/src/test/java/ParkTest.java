@@ -10,12 +10,12 @@ public class ParkTest {
 
     @Before
     public void before() {
-        park1 = new Park("Flying Dutchman");
+        park1 = new Park("The Big Green");
     }
 
     @Test
     public void parkHasName() {
-        assertEquals("Flying Dutchman", park1.getName());
+        assertEquals("The Big Green", park1.getName());
     }
 
 

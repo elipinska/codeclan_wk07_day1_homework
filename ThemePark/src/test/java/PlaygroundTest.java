@@ -14,7 +14,7 @@ public class PlaygroundTest {
 
     @Before
     public void before() {
-        playground1 = new Playground("Flying Dutchman");
+        playground1 = new Playground("Clown Around");
         visitor1 = new Visitor(15, 150.0, 20.50);
         visitor2 = new Visitor(27, 170.0, 100.0);
         visitor3 = new Visitor(10, 130.5, 10.0);
@@ -23,7 +23,7 @@ public class PlaygroundTest {
 
     @Test
     public void playgroundHasName() {
-        assertEquals("Flying Dutchman", playground1.getName());
+        assertEquals("Clown Around", playground1.getName());
     }
 
     @Test
