@@ -15,28 +15,28 @@ Model a ThemePark (with various Attraction and Stalls) and it's Visitors.
 ### MVP:
 
 
-1. Visitor has age, height, money
-2. Using a 'Attraction' abstract class (which has a 'name'), create some classes for Rollercoaster, Dodgems, Park, Playground.
-3. Using a 'Stall' abstract class (which has a 'name', 'ownerName' and 'parkingSpot'), create some classes for IceCreamStall, CandyFlossStall, TobaccoStall.
+1. Visitor has age, height, money DONE
+2. Using a 'Attraction' abstract class (which has a 'name'), create some classes for Rollercoaster, Dodgems, Park, Playground. DONE
+3. Using a 'Stall' abstract class (which has a 'name', 'ownerName' and 'parkingSpot'), create some classes for IceCreamStall, CandyFlossStall, TobaccoStall. DONE
 
 5. Interfaces would be:
 	
-	IChargeable needs: double priceFor(Visitor)
-	IRestrictable needs: Boolean isAllowedTo(Visitor)
-	IEnjoyable needs: int getFunRating(), String getName()
+	IChargeable needs: double priceFor(Visitor) DONE
+	IRestrictable needs: Boolean isAllowedTo(Visitor) DONE
+	IEnjoyable needs: int getFunRating(), String getName() DONE
 
 
-	- Playground is IRestrictable and has a maximum age of 15
-	- TobaccoStall is IRestrictable and has a minimum age of 18
-	- Rollercoster is IRestrictable and requires you to be over 145cm tall and over 12 years of age
+	- Playground is IRestrictable and has a maximum age of 15 DONE
+	- TobaccoStall is IRestrictable and has a minimum age of 18 DONE
+	- Rollercoster is IRestrictable and requires you to be over 145cm tall and over 12 years of age DONE
 	
-	- Rollercoaster, Dodgems are IChargeable but charge half price to children under 12 years old.
-	- All Stalls are IChargeable but they have the same price irrespectable of who is buying.
-	- Park and Playground have no price to enter, but other Attractions do.
+	- Rollercoaster, Dodgems are IChargeable but charge half price to children under 12 years old. DONE
+	- All Stalls are IChargeable but they have the same price irrespectable of who is buying. DONE
+	- Park and Playground have no price to enter, but other Attractions do. DONE
 	
-	- add a new class variable `int funRating` to both Attraction and Stall.
-	- now make everything in a park (all Attractions and Stalls) implement IEnjoyable
-	- IEnjoyable's method getFunRating is sort of a getter for `int funRating`.
+	- add a new class variable `int funRating` to both Attraction and Stall. DONE
+	- now make everything in a park (all Attractions and Stalls) implement IEnjoyable DONE
+	- IEnjoyable's method getFunRating is sort of a getter for `int funRating`. DONE
 
 		
 4. ThemePark stores everything that is enjoyable in a collection.

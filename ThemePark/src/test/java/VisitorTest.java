@@ -1,5 +1,8 @@
+import People.Visitor;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,17 +17,17 @@ public class VisitorTest {
 
     @Test
     public void visitorHasAge() {
-        assertEquals(13, visitor1.getAge());
+        Assert.assertEquals(13, visitor1.getAge());
     }
 
     @Test
     public void visitorHasHeight() {
-        assertEquals(150, visitor1.getHeight(), 0);
+        Assert.assertEquals(150, visitor1.getHeight(), 0);
     }
 
     @Test
     public void visitorHasWallet() {
-        assertEquals(20, visitor1.getWallet(), 0);
+        Assert.assertEquals(20, visitor1.getWallet(), 0);
     }
 
 
